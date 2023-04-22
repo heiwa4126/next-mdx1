@@ -7,7 +7,7 @@ import Test from "@/components/test";
 
 const components = { Test };
 
-export default function TestPage({ source }: { source: MDXRemoteSerializeResult<Record<string, unknown>, Record<string, unknown>> }) {
+export default function TestPage({ source }: { source: MDXRemoteSerializeResult }) {
   return (
     <div className="wrapper">
       <MDXRemote {...source} components={components} />

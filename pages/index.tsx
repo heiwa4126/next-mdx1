@@ -18,6 +18,9 @@ export default function Home() {
           <li>
             <Link href={"mdx1"}>mdx1</Link>
           </li>
+          <li>
+            <Link href={"mdx1a"}>mdx1a</Link>
+          </li>
         </ul>
       </main>
     </>
