@@ -21,3 +21,10 @@ export async function getStaticProps() {
   const mdxSource = await serialize(source);
   return { props: { source: mdxSource } };
 }
+
+/*
+getStaticPropsとTestPageは、同じファイルにありながら、2つの異なる場所で実行されます。
+最終的に、ブラウザバンドルにはgetStaticPropsはまったく含まれませんし、
+サーバでのみ使用される関数も含まれませんので、
+serializeはブラウザバンドルから完全に削除されます。
+*/
