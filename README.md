@@ -11,3 +11,7 @@ pnpm create next-app@latest next-mdx1 --ts --use-pnpm
 nextjsは、サーバサイドで使用するものとクライアントバンドルで使用するものを適切に判断する必要があります。
 もし、mdx-remoteのコードを外部のユーティリティファイルに置き、何かが壊れている場合は、
 問題を起こす前に、それを削除し、上記の単純な例から始めてください。
+
+Parsing Frontmatter のサンプルコードがうまく動かない。
+
+mdxの中でexportした変数がserialize()で出てこない。
