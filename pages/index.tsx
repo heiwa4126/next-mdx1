@@ -4,6 +4,18 @@ import Link from "next/link";
 // import Image from "next/image";
 // import styles from "@/styles/Home.module.css";
 
+function Links({ links }: { links: string[] }) {
+  return (
+    <ul>
+      {links.map((link) => (
+        <li>
+          <Link href={link}>{link}</Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -14,14 +26,7 @@ export default function Home() {
       </Head>
       <main>
         <div>hello</div>
-        <ul>
-          <li>
-            <Link href={"mdx1"}>mdx1</Link>
-          </li>
-          <li>
-            <Link href={"mdx1a"}>mdx1a</Link>
-          </li>
-        </ul>
+        <Links links={["mdx1", "mdx1a", "mdx2"]} />
       </main>
     </>
   );
