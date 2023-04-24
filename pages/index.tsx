@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
       <main>
         <h2>next-mdx1</h2>
-        <Links links={["mdx1", "mdx1a", "mdx2", "mdx3"]} />
+        <Links links={["mdx1", "mdx1a", "mdx2", "mdx3", "mdx2a"]} />
       </main>
     </>
   );
