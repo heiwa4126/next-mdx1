@@ -9,7 +9,7 @@ import Test from "@/components/test";
 const components = { Test };
 
 export default function TestPage({ mdxSource }: { mdxSource: MDXRemoteSerializeResult }) {
-  console.log(mdxSource.frontmatter);
+  // console.log(mdxSource.frontmatter);
   return (
     <div className="wrapper">
       <h1>{mdxSource.frontmatter?.title as string}</h1>

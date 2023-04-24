@@ -41,6 +41,6 @@ export async function getStaticProps() {
       parseFrontmatter: false,
     }
   );
-  console.log(mdxSource);
+  // console.log(mdxSource);
   return { props: { source: mdxSource } };
 }
