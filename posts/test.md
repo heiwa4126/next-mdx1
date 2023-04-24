@@ -5,8 +5,16 @@ date: '2022-04-04'
 [Next.js and Vercel - Deploying Your Next.js App | Learn Next.js](https://nextjs.org/learn/basics/deploying-nextjs-app/platform-details)
 に書かれている部分の練習。
 
+## 画像
 
-ロレム・イプサムとは、出版、ウェブデザイン、グラフィックデザインなどにおいて、レイアウトのプレースホルダーとして使用される文章のことです。この文章は、ラテン語によるテキストで、実際の意味はありません。
+![dummy image](../public/posts/test/test.png)
+
+ここはテスト。markdown中に`<Image>`タグが書いてある。
+<Image src="/posts/test/test.png" width="860" height="320" />
+
+## コンポーネント
+
+ここは`<Test />`コンポーネントです。<Test name={title} />
 
 ## 内部リンク
 
@@ -27,12 +35,6 @@ const processedContent = await remark()
   .process(matterResult.content);
 ```
 
-## テキスト例
-
-以下はロレム・イプサムの一例です。
-
-> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
 ## テーブル例
 
 以下はロレム・イプサムを使用したテーブルの例です。
@@ -43,6 +45,15 @@ const processedContent = await remark()
 | テキスト | テキスト | テキスト |
 | テキスト | テキスト | テキスト |
 
+
+## テキスト例
+
+以下はロレム・イプサムの一例です。
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+ロレム・イプサムとは、出版、ウェブデザイン、グラフィックデザインなどにおいて、レイアウトのプレースホルダーとして使用される文章のことです。この文章は、ラテン語によるテキストで、実際の意味はありません。
+
 ## 箇条書き例
 
 以下はロレム・イプサムを使用した箇条書きの例です。
@@ -51,7 +62,5 @@ const processedContent = await remark()
 *   Consectetur adipiscing elit
 *   Sed do eiusmod tempor incididunt
 *   Ut labore et dolore magna aliqua
-
-
 
 以上、ロレム・イプサムの例でした。

@@ -5,8 +5,14 @@ import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
 import fs from "node:fs";
 import path from "node:path";
-import gfm from "remark-gfm";
-import prism from "remark-prism";
+import remarkGfm from "remark-gfm";
+import remarkPrism from "remark-prism";
+import Link from "next/link";
+import Image from "next/image";
+
+import Test from "@/components/test";
+
+const components = { Test, Link, Image };
 
 const postsDirectory = path.join(process.cwd(), "posts");
 
@@ -15,7 +21,7 @@ export default function TestPage({ mdxSource }: { mdxSource: MDXRemoteSerializeR
   return (
     <div className="wrapper">
       <h1>{mdxSource.frontmatter?.title as string}</h1>
-      <MDXRemote {...mdxSource} />
+      <MDXRemote {...mdxSource} components={components} />
     </div>
   );
 }
@@ -32,7 +38,7 @@ export async function getStaticProps() {
       // MDX's available options, see the MDX docs for more info.
       // https://mdxjs.com/packages/mdx/#compilefile-options
       mdxOptions: {
-        remarkPlugins: [gfm, prism],
+        remarkPlugins: [remarkGfm, remarkPrism],
         rehypePlugins: [],
         format: "mdx",
       },
