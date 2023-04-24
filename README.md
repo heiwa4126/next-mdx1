@@ -14,4 +14,9 @@ nextjsは、サーバサイドで使用するものとクライアントバン�
 
 Parsing Frontmatter のサンプルコードがうまく動かない。
 
+> Frontmatter は YAML または JSON フォーマットでテンプレート上部に記述することが できるページ固有の変数です。
+
+https://middlemanapp.com/jp/basics/frontmatter/
+
+
 mdxの中でexportした変数がserialize()で出てこない。

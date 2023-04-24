@@ -25,8 +25,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <div>hello</div>
-        <Links links={["mdx1", "mdx1a", "mdx2"]} />
+        <h1>next-mdx1</h1>
+        <Links links={["mdx1", "mdx1a", "mdx2", "mdx3"]} />
       </main>
     </>
   );

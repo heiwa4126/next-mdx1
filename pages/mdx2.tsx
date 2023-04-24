@@ -24,6 +24,8 @@ export async function getStaticProps() {
   const source = `---
 title: Test
 ---
+## {title}
+
 Some **mdx** text, with a component <Test name={title}/>
   `;
 
