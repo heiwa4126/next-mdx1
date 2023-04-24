@@ -1,14 +1,11 @@
 import Head from "next/head";
 import Link from "next/link";
 
-// import Image from "next/image";
-// import styles from "@/styles/Home.module.css";
-
 function Links({ links }: { links: string[] }) {
   return (
     <ul>
-      {links.map((link) => (
-        <li>
+      {links.map((link, index) => (
+        <li key={index}>
           <Link href={link}>{link}</Link>
         </li>
       ))}
@@ -25,7 +22,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main>
-        <h1>next-mdx1</h1>
+        <h2>next-mdx1</h2>
         <Links links={["mdx1", "mdx1a", "mdx2", "mdx3"]} />
       </main>
     </>

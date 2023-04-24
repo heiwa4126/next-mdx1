@@ -1,9 +1,11 @@
 // Parsing Frontmatter
 // from https://www.npmjs.com/package/next-mdx-remote
 
-import { motion } from "framer-motion";
-import { MDXRemote } from "next-mdx-remote";
+import { motion as motion1 } from "framer-motion";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
+
+const motion = motion1 as any;
 
 export default function TestPage({ source }: { source: MDXRemoteSerializeResult }) {
   return (
