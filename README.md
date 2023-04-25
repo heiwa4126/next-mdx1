@@ -30,3 +30,9 @@ mdxの中でexportした変数がserialize()で出てこない。
 
 rehype-gfmは... 原理的に存在しないか。
 remark か rehypeのどっちかに plugins そろえた方がいいんじゃないかとは思うけど。
+
+imgをnext/imageにするやつはこのへん?
+- [@allenlee/rehype-image-process - npm](https://www.npmjs.com/package/@allenlee/rehype-image-process)
+- [@stefanprobst/rehype-next-image - npm](https://www.npmjs.com/package/@stefanprobst/rehype-next-image)
+
+rehype plugins の作り方も覚えたいので、参考にしながら。

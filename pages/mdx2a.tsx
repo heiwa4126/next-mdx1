@@ -3,12 +3,13 @@
 
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize } from "next-mdx-remote/serialize";
+import Image from "next/image";
+import Link from "next/link";
 import fs from "node:fs";
 import path from "node:path";
-import remarkGfm from "remark-gfm";
 import rehypePrism from "rehype-prism";
-import Link from "next/link";
-import Image from "next/image";
+import remarkGfm from "remark-gfm";
+// import rehypeImageProcess from "@allenlee/rehype-image-process";
 
 import Test from "@/components/test";
 
