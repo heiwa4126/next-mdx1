@@ -1,5 +1,9 @@
 # next-mdx1
 
+## メモ
+
+(TODO:あとでまとめる)
+
 ```bash
 pnpm create next-app@latest next-mdx1 --ts --use-pnpm
 ```
@@ -20,3 +24,9 @@ https://middlemanapp.com/jp/basics/frontmatter/
 
 
 mdxの中でexportした変数がserialize()で出てこない。
+
+[remark-prism](https://www.npmjs.com/package/remark-prism) の方はあんまりメンテナンスされてないみたいので(@typesも別だし)
+[rehype-prism](https://www.npmjs.com/package/rehype-prism) に入れ替えた。
+
+rehype-gfmは... 原理的に存在しないか。
+remark か rehypeのどっちかに plugins そろえた方がいいんじゃないかとは思うけど。

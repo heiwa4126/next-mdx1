@@ -6,7 +6,7 @@ import { serialize } from "next-mdx-remote/serialize";
 import fs from "node:fs";
 import path from "node:path";
 import remarkGfm from "remark-gfm";
-import remarkPrism from "remark-prism";
+import rehypePrism from "rehype-prism";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -38,8 +38,8 @@ export async function getStaticProps() {
       // MDX's available options, see the MDX docs for more info.
       // https://mdxjs.com/packages/mdx/#compilefile-options
       mdxOptions: {
-        remarkPlugins: [remarkGfm, remarkPrism],
-        rehypePlugins: [],
+        remarkPlugins: [remarkGfm],
+        rehypePlugins: [rehypePrism],
         format: "mdx",
       },
       // Indicates whether or not to parse the frontmatter from the mdx source
